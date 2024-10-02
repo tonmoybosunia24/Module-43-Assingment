@@ -18,7 +18,7 @@ const Cookings = ({cooksDetail}) => {
                             <p className="ml-6">Calories</p>
                      </div>
                      {
-                            cooksDetail.map(cookdetal => <Cooking cookdetal={cookdetal} handleWantCook={handleWantCook}></Cooking>)
+                            cooksDetail.map(cookdetal => <Cooking cookdetal={cookdetal} key={handleWantCook.recipe_id} handleWantCook={handleWantCook}></Cooking>)
                      }
                      <CurrentCooking currentCook={currentCook}></CurrentCooking>
               </div>
