@@ -2,17 +2,15 @@ import { useState } from "react";
 import Cooking from "../Cooking/Cooking";
 import CurrentCooking from "../CurrentCooking/CurrentCooking";
 
-const Cookings = ({cooksDetail, setCooksDetail}) => {
+const Cookings = ({cooksDetail}) => {
        const [currentCook, setCurrentCook] = useState([])
-       const [currentCooking, setCurrentCooking] = useState([])
-       console.log(currentCooking)
        const handleWantCook = cooked =>{
               const newCurrentCook = [...currentCook, cooked]
               setCurrentCook(newCurrentCook)
        }
        return (
               <div className="w-4/12 border-2 rounded-2xl text-center">
-                     <h2 className="mt-5 font-bold text-2xl">Want To Cook: {currentCooking.length}</h2>
+                     <h2 className="mt-5 font-bold text-2xl">Want To Cook: {cooksDetail.length}</h2>
                      <hr className="w-4/6 h-[1px] my-2 border-none bg-gray-300 m-auto" />
                      <div className="mt-3 mb-2 flex mr-5 text-sm">
                             <p className="ml-6">Name</p>
@@ -20,7 +18,7 @@ const Cookings = ({cooksDetail, setCooksDetail}) => {
                             <p className="ml-6">Calories</p>
                      </div>
                      {
-                     cooksDetail.map(cookdetal => <Cooking cookdetal={cookdetal} handleWantCook={handleWantCook} setCurrentCooking={setCurrentCooking} currentCooking={currentCooking}, setCooksDetail={setCooksDetail}></Cooking>)
+                            cooksDetail.map(cookdetal => <Cooking cookdetal={cookdetal} handleWantCook={handleWantCook}></Cooking>)
                      }
                      <CurrentCooking currentCook={currentCook}></CurrentCooking>
               </div>
