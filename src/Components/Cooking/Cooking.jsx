@@ -5,7 +5,7 @@ const Cooking = ({ cookdetal, handleWantCook }) => {
     return (
         <div>
             <div className="mt-2 px-3 mb-2">
-                <table className="bg-slate-200 w-full text-xs py-5 border-separate">
+                <table className="bg-slate-200 rounded-xl px-2 w-full text-xs py-5 border-separate">
                     <tbody>
                         <tr className="bg-base-200">
                             <th>{recipe_id}</th>
@@ -15,7 +15,7 @@ const Cooking = ({ cookdetal, handleWantCook }) => {
                             <td>
                                 <button
                                     onClick={() => handleWantCook(cookdetal)}
-                                    className="bg-green-500 p-1 px-2 rounded-full"
+                                    className="bg-[#0BE58A] p-2 px-3 font-bold rounded-full"
                                 >
                                     Preparing
                                 </button>

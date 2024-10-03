@@ -5,8 +5,8 @@ const CurrentCooked = ({ currentCook }) => {
     
     return (
         <div>
-            <div className="mt-2 px-3 mb-2">
-                <table className="bg-slate-200 w-full text-xs py-5 border-separate">
+            <div className="mt-2 px-3 mb-5">
+                <table className="bg-slate-200 w-full text-xs py-7 rounded-xl px-2 border-separate">
                     <tbody>
                         <tr className="bg-base-200">
                             <th>{recipe_id}</th>

@@ -30,7 +30,7 @@ const Blog = ({ blogs, handleCookDetails }) => {
                 <p className="flex items-center gap-2"><FaRegClock />{preparing_time}</p>
                 <p className="flex items-center gap-2"><FaFire />{calories}</p>
             </div>
-            <button onClick={() => handleCookDetails(blogs)} className="bg-green-300 p-2 text-sm">
+            <button onClick={() => handleCookDetails(blogs)} className="bg-[#0BE58A] rounded-full font-semibold px-3 p-2 text-sm">
                 Want To Cook
             </button>
         </div>
