@@ -7,7 +7,6 @@ import Header from './Components/Header/Header'
 function App() {
   const [cooksDetail, setCooksDetail] = useState([])
   const handleCookDetails = cooks =>{
-    // console.log("hello", cooks)
     const newCookDetail = [...cooksDetail, cooks]
     setCooksDetail(newCookDetail)
   }
