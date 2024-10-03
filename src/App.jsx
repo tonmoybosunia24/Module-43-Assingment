@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Header></Header>
-      <div className='flex px-20 gap-5'>
+      <div className='flex flex-col lg:flex-row lg:mb-5 px-5 lg:px-20 gap-5'>
         <Blogs handleCookDetails={handleCookDetails}></Blogs>
         <Cookings cooksDetail={cooksDetail}></Cookings>
       </div>

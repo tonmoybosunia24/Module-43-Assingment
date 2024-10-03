@@ -12,7 +12,7 @@ const Cookings = ({ cooksDetail }) => {
     };
 
     return (
-        <div className="w-4/12 border-2 rounded-2xl text-center">
+        <div className="lg:w-4/12 mb-5 lg:mb-0 border-2 rounded-2xl text-center">
             <h2 className="mt-5 font-bold text-2xl">Want To Cook: {cooksDetail.length}</h2>
             <hr className="w-4/6 h-[1px] my-2 border-none bg-gray-300 m-auto" />
             <div className="mt-3 mb-2 flex mr-5 text-sm">

@@ -12,8 +12,8 @@ const Blogs = ({ handleCookDetails }) => {
        }, []);
 
        return (
-              <div className="w-8/12">
-                     <div className="grid grid-cols-2 gap-5">
+              <div className="lg:w-8/12">
+                     <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-5">
                      {
                             blogs.map(blog => <Blog key={blog.id} blogs={blog} handleCookDetails={handleCookDetails}></Blog>)
                      }
